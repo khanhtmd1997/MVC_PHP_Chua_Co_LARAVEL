@@ -1,0 +1,20 @@
+<h2>Create new post</h2> 
+<?php     if(isset($message)){         
+	echo "<p class='alert-info'>$message</p>";     
+} 
+?> 
+
+<form method="post"action="index.php?controller=posts&action=them">     
+	<div class="form-group">
+		<label>Title</label>         
+		<input type="title" name="title" class="form-control"/>     
+	</div>     
+	<div class="form-group">
+		<label>Content</label>         
+		<textarea name="content" class="form-control"></textarea>     
+	</div>       
+	<div class="form-group">         
+		<inputtype="submit" value="Create" class="btn btn-primary"/>         
+		<ahref="index.php" class="btn btn-default">Cancel</a>     
+	</div> 
+</form>
